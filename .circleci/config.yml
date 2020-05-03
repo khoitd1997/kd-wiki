@@ -62,4 +62,6 @@ jobs:
           command: |
             rm -rf docs/*
             cp -r /tmp/book/* docs
-            git push origin HEAD:master
+            git add .
+            git commit -m ci: publishing github page"
+            yes | git push origin HEAD:master -y
