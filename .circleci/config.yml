@@ -20,7 +20,7 @@ jobs:
           command: |
             eval $(~/.linuxbrew/bin/brew shellenv)
             mkdir -p /tmp/book
-            mdbook build -o /tmp/book
+            mdbook build --dest-dir /tmp/book
 
       - persist_to_workspace:
           root: /tmp/book
