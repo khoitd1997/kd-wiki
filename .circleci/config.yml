@@ -37,9 +37,9 @@ jobs:
     docker:
         - image: fedora:latest
     steps:
-      - checkout
       - attach_workspace:
           at: /tmp/book
+      - checkout
       - run:
           name: Configure git credential
           command: |
