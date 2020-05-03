@@ -19,8 +19,8 @@ class PM {};
 ```cpp
 /**
  * @brief This is brief
- * 
- * @param param Talk about param 
+ *
+ * @param param Talk about param
  * @return false Talk about return false
  */
 ```

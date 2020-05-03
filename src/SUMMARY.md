@@ -7,3 +7,5 @@
   - [CMake](common_coding_decisions/cmake.md)
   - [CPP](common_coding_decisions/cpp.md)
   - [Python](common_coding_decisions/python.md)
+- [Cool Articles](cool_articles/README.md)
+  - [General Software Engineering](cool_articles/general_software_engineering.md)
