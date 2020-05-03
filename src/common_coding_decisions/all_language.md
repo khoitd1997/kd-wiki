@@ -1,4 +1,4 @@
-# Language Agnostic Rules
+# Rules for All Languages
 
 ## Comments Across Languages
 
@@ -7,5 +7,5 @@
 
 # FOR EMPHASIS
 
-# don't do this casing
+# never this casing
 ```
