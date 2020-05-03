@@ -65,6 +65,6 @@ jobs:
             if [[ $(git status --porcelain) ]]; then
               ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
               git add .
-              git commit -m "ci: publishing github page"
+              git commit -m "ci: github page publish"
               git push origin HEAD:master
             fi
