@@ -64,4 +64,4 @@ jobs:
             cp -r /tmp/book/* docs
             git add .
             git commit -m "ci: publishing github page"
-            yes | git push origin HEAD:master -y
+            yes | git push origin HEAD:master
