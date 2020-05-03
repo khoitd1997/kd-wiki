@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: fedora:latest
     steps:
+      - add_ssh_keys:
+            fingerprints:
+              - "46:cf:a0:c7:82:a2:c1:d9:ee:68:6f:ea:99:c6:e4:45"
       - checkout
       - run:
           name: Install mdbook
@@ -21,3 +24,13 @@ jobs:
             eval $(~/.linuxbrew/bin/brew shellenv)
             rm -rf docs/*
             mdbook build --dest-dir docs
+
+      - run:
+          name: Deploy book if master branch
+          command: |
+            BRANCH=$(git rev-parse --abbrev-ref HEAD)
+            if [[ "$BRANCH" == "master" ]]; then
+              git config user.email "ci-build@klukas.net" 
+              git config user.name "ci-build"
+              git push
+            fi
