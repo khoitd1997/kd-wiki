@@ -63,5 +63,5 @@ jobs:
             rm -rf docs/*
             cp -r /tmp/book/* docs
             git add .
-            git commit -m ci: publishing github page"
+            git commit -m "ci: publishing github page"
             yes | git push origin HEAD:master -y
