@@ -3,7 +3,13 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - deploy
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+
 version: 2.0
 jobs:
   build:
@@ -55,8 +61,5 @@ jobs:
           name: Push docs
           command: |
             rm -rf docs/*
-            cp -r /tmp/book/. docs
+            cp -r /tmp/book/* docs
             git push
-    filters:
-            branches:
-              only: master
