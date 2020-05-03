@@ -62,4 +62,4 @@ jobs:
           command: |
             rm -rf docs/*
             cp -r /tmp/book/* docs
-            git push
+            git push HEAD:master
