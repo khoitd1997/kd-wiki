@@ -1,3 +1,9 @@
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - deploy
 version: 2.0
 jobs:
   build:
@@ -50,3 +56,6 @@ jobs:
             rm -rf docs/*
             cp -r /tmp/book/* docs
             git push
+    filters:
+            branches:
+              only: master
