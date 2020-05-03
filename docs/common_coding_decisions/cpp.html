@@ -214,21 +214,6 @@ constexpr std::array&lt;uint16_t, 2&gt; TIMETABLE_SERVICE_UUID_BASE{ 0xBC, 0x8A 
         </div>
 
         
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
-        
 
         
 
