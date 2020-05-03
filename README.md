@@ -1,5 +1,7 @@
 # Personal Wiki
 
+[![CircleCI](https://circleci.com/gh/khoitd1997/kd-wiki.svg?style=svg)](https://app.circleci.com/pipelines/github/khoitd1997/kd-wiki)
+
 Personal wiki for keeping notes on various things.
 
 ## Development Workflow
