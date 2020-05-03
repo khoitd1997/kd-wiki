@@ -4,9 +4,6 @@ jobs:
     docker:
       - image: fedora:latest
     steps:
-      - add_ssh_keys:
-            fingerprints:
-              - "46:cf:a0:c7:82:a2:c1:d9:ee:68:6f:ea:99:c6:e4:45"
       - checkout
       - run:
           name: Install mdbook
@@ -22,18 +19,38 @@ jobs:
           name: Build book
           command: |
             eval $(~/.linuxbrew/bin/brew shellenv)
-            rm -rf docs/*
-            mdbook build --dest-dir docs
+            mkdir -p /tmp/book
+            mdbook build -o /tmp/book
 
+      - persist_to_workspace:
+          root: /tmp/book
+          paths: 
+            - ./*
+
+  deploy:
+    docker:
+        - image: fedora:latest
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/book
       - run:
-          name: Deploy book if master branch
+          name: Configure git credential
           command: |
-            BRANCH=$(git rev-parse --abbrev-ref HEAD)
-            if [[ "$BRANCH" != "master" ]]; then
-              echo 'Not master';
-              exit 1;
-            fi
-
             git config user.email "ci-build@klukas.net" 
             git config user.name "ci-build"
+
+      - add_ssh_keys:
+            fingerprints:
+              - "46:cf:a0:c7:82:a2:c1:d9:ee:68:6f:ea:99:c6:e4:45"
+
+      - run:
+          name: Push docs
+          command: |
+            rm -rf docs/*
+            cp -r /tmp/book/* docs
             git push
+
+    filters:
+            branches:
+              only: master
