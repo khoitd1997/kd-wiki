@@ -8,6 +8,7 @@ jobs:
       - run:
           name: Install homebrew and mdbook
           command: |
+            dnf install -y git libxcrypt-compat curl file @development-tools
             git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
             mkdir ~/.linuxbrew/bin
             ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
