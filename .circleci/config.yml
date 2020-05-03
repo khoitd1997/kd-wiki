@@ -37,9 +37,9 @@ jobs:
     docker:
         - image: fedora:latest
     steps:
+      - checkout
       - attach_workspace:
           at: /tmp/book
-      - checkout
       - run:
           name: Configure git credential
           command: |
@@ -55,7 +55,7 @@ jobs:
           name: Push docs
           command: |
             rm -rf docs/*
-            cp -r /tmp/book/* docs
+            cp -r /tmp/book/. docs
             git push
     filters:
             branches:
