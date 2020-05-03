@@ -43,6 +43,7 @@ jobs:
       - run:
           name: Configure git credential
           command: |
+            dnf install -y git
             git config user.email "ci-build@klukas.net" 
             git config user.name "ci-build"
 
