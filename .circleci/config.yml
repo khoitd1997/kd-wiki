@@ -60,9 +60,11 @@ jobs:
       - run:
           name: Push docs
           command: |
-            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-            rm -rf docs/*
-            cp -r /tmp/book/* docs
-            git add .
-            git commit -m "ci: publishing github page"
-            git push origin HEAD:master
+            if [[ $(git status --porcelain) ]]; then
+              ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+              rm -rf docs/*
+              cp -r /tmp/book/* docs
+              git add .
+              git commit -m "ci: publishing github page"
+              git push origin HEAD:master
+            fi
