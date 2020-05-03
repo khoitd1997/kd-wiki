@@ -50,7 +50,3 @@ jobs:
             rm -rf docs/*
             cp -r /tmp/book/* docs
             git push
-
-    filters:
-            branches:
-              only: master
