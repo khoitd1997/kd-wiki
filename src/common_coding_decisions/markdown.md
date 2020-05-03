@@ -9,3 +9,13 @@
 <!-- bad -->
 ## This is a title
 ```
+
+## End of Line Dot
+
+```md
+<!-- good -->
+Line here.
+
+<!-- bad -->
+Line here
+```

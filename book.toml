@@ -1,0 +1,13 @@
+[book]
+authors = ["khoitd1997"]
+language = "en"
+multilingual = false
+src = "src"
+title = "kd-wiki"
+
+[build]
+create-missing = false
+
+[output.html]
+theme = "theme" # theme folder
+default-theme = "ayu"

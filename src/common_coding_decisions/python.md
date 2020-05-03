@@ -2,7 +2,7 @@
 
 ## Naming Conventions
 
-[Pep8](https://www.python.org/dev/peps/pep-0008/)
+[Pep8](https://www.python.org/dev/peps/pep-0008/). Summary below
 
 ```python
 # also applies to exceptions
