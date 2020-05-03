@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install homebrew and mdbook
+          name: Install mdbook
           command: |
             dnf install -y git libxcrypt-compat curl file @development-tools
             git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
@@ -18,4 +18,5 @@ jobs:
       - run:
           name: Build book
           command: |
+            eval $(~/.linuxbrew/bin/brew shellenv)
             mdbook build
