@@ -52,7 +52,6 @@ jobs:
             dnf install -y git
             git config user.email "ci-build@klukas.net" 
             git config user.name "ci-build"
-            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
       - add_ssh_keys:
             fingerprints:
@@ -61,6 +60,7 @@ jobs:
       - run:
           name: Push docs
           command: |
+            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
             rm -rf docs/*
             cp -r /tmp/book/* docs
             git add .
