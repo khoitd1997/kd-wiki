@@ -29,8 +29,11 @@ jobs:
           name: Deploy book if master branch
           command: |
             BRANCH=$(git rev-parse --abbrev-ref HEAD)
-            if [[ "$BRANCH" == "master" ]]; then
-              git config user.email "ci-build@klukas.net" 
-              git config user.name "ci-build"
-              git push
+            if [[ "$BRANCH" != "master" ]]; then
+              echo 'Not master';
+              exit 1;
             fi
+
+            git config user.email "ci-build@klukas.net" 
+            git config user.name "ci-build"
+            git push
