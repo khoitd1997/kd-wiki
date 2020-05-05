@@ -11,6 +11,7 @@
   - [General Software Engineering](cool_articles/general_software_engineering.md)
   - [Embedded Systems](cool_articles/embedded_systems.md)
 - [Side Topics](side_topics/README.md)
+  - [PCB Design](side_topics/pcb_design.md)
   - [Virtualization](./side_topics/virtualization.md)
   - [Server Firmware](./side_topics/server_firmware.md)
 - [Unexplored Things](unexplored_things/README.md)
