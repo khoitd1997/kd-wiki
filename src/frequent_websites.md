@@ -6,6 +6,7 @@ Websites that I found helpful to browse frequently:
 
 - [Hackernews](https://hckrnews.com/)
 - [Hackaday](https://hackaday.com/)
+- [Twitter](https://twitter.com/home)
 
 ## Weekly
 
