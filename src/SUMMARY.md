@@ -14,6 +14,7 @@
 - [Unexplored Things](unexplored_things/README.md)
   - [Embedded Systems](unexplored_things/embedded_systems.md)
   - [Uncategorized](unexplored_things/uncategorized.md)
+- [Things To Check Back Later](things_to_check_back.md)
 - [Open Source Contribution Notes](good_open_source_contrib.md)
 - [Common Coding Decisions](common_coding_decisions/README.md)
   - [All Languages](common_coding_decisions/all_language.md)

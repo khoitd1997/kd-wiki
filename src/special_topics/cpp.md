@@ -7,6 +7,11 @@
 - [Folly](2): Facebook general library.
 - [SG20 Education Working Group](4): Lots of curated videos.
 
+## Tooling
+
+- [GCC 10 Built-in Static Analysis](7)
+- [Sanitizers](8): Way better than Valgrind
+
 ## Improving Compile Time
 
 - [CMake 3.16 supports unity build](5): Works by combining multiple source files into one source file and then build it at once. Note that there is a lot of "but" and can be hard to use for every cases.
@@ -19,3 +24,5 @@
 
 [5]: https://cmake.org/cmake/help/v3.16/prop_tgt/UNITY_BUILD.html
 [6]: https://cmake.org/cmake/help/latest/command/target_precompile_headers.html
+[7]: https://developers.redhat.com/blog/2020/03/26/static-analysis-in-gcc-10/
+[8]: https://github.com/google/sanitizers
