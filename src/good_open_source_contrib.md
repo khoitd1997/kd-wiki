@@ -9,6 +9,7 @@ Places or things that seem conductive to external contribution and fits my exper
 - Arm Mbed
 - RiscV Linux Kernel
 - Zephyr
+- [Add JLink RTT to VsCode Cortex Debug extension](https://github.com/Marus/cortex-debug)
 
 ## Others
 
