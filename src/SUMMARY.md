@@ -9,6 +9,7 @@
   - [Software Architecture](special_topics/software_architecture.md)
 - [Side Topics](side_topics/README.md)
   - [FPGA](side_topics/fpga.md)
+  - [UML](side_topics/uml.md)
   - [PCB Design](side_topics/pcb_design.md)
   - [Virtualization](./side_topics/virtualization.md)
   - [Server Firmware](./side_topics/server_firmware.md)
