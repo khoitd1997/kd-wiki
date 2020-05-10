@@ -12,6 +12,7 @@
   - [PCB Design](side_topics/pcb_design.md)
   - [Virtualization](./side_topics/virtualization.md)
   - [Server Firmware](./side_topics/server_firmware.md)
+  - [GPU Programming](./side_topics/gpu_programming.md)
 - [Unexplored Things](unexplored_things/README.md)
   - [Embedded Systems](unexplored_things/embedded_systems.md)
   - [Uncategorized](unexplored_things/uncategorized.md)
