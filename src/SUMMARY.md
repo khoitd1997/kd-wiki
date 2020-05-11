@@ -10,7 +10,7 @@
 - [Side Topics](side_topics/README.md)
   - [FPGA](side_topics/fpga.md)
   - [UML](side_topics/uml.md)
-  - [PCB Design](side_topics/pcb_design.md)
+  - [PCB and Mechanical Design](side_topics/pcb_mechanical_design.md)
   - [Virtualization](./side_topics/virtualization.md)
   - [Server Firmware](./side_topics/server_firmware.md)
   - [GPU Programming](./side_topics/gpu_programming.md)

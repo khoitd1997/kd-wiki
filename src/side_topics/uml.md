@@ -2,6 +2,10 @@
 
 UML is a modeling language, it's helpful for making simple charts and diagrams to document and visualize design but don't get too deep on it.
 
+## PlantUML
+
+PlantUML allows you to describe your UML diagram using text so it's pretty convenient to check it in to vcs. There is also a vscode extension that is pretty good. The syntax is fairly simple.
+
 ## UML state machine
 
 The [Wikipedia page on UML state machine is a really good reference](1)
