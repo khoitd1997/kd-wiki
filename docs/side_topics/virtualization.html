@@ -154,6 +154,16 @@
 <li>Docker: good for deployment and local development as well, probably use this most of the time.</li>
 </ul>
 <p>Hard to run virtualized instance on the server of your own unless the server supports nested virtualization(which is usually expensive) or you rent your own bare metal server(there are some not as famous but cheap vendors for this).</p>
+<h2><a class="header" href="#gpu-passthrough-for-windows-guest" id="gpu-passthrough-for-windows-guest">GPU Passthrough for Windows Guest</a></h2>
+<p>In the interest of not dual booting to use CAD software, GPU passthrough should be explored. Testing shows that even with the Ryzen machine but no GPU passthrough, Fusion360 complains. Sharing a single GPU between host and guest is possible but is fairly complicated so should probably get a cheap card for the host and use the 1050 for the guest.</p>
+<p>Fedora is noted to be the easiest host OS to set up these things since things are up-to-date and RedHat wrote a lot of these things.</p>
+<p>The tool to use is <code>virsh</code>, the command line of <code>libvirt</code>, don't use virt-manager(the GUI) since it doesn't have enough expressiveness for things like CPU pinning, fake kvm off etc.</p>
+<p>The machine is specified in an xml file and <code>virsh create</code> is used to bring it up.</p>
+<p><a href="1">Show complete process, but probably doesn't work for consumer card</a>
+<a href="2">Arch Super Detailed Guide</a>
+<a href="3">Make Nvidia card not realize it's in a VM</a>
+<a href="4">Guide for Fedora, missing some stuffs</a>
+<a href="5">B350 Pro4 IOMMU Group Notes</a></p>
 
                     </main>
 
