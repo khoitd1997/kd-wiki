@@ -18,9 +18,13 @@ The tool to use is `virsh`, the command line of `libvirt`, don't use virt-manage
 The machine is specified in an xml file and `virsh create` is used to bring it up.
 
 [Show complete process, but probably doesn't work for consumer card](1)
+
 [Arch Super Detailed Guide](2)
+
 [Make Nvidia card not realize it's in a VM](3)
+
 [Guide for Fedora, missing some stuffs](4)
+
 [B350 Pro4 IOMMU Group Notes](5)
 
 [1]: https://access.redhat.com/documentation/en-us/red_hat_virtualization/4.3/html/setting_up_an_nvidia_gpu_for_a_virtual_machine_in_red_hat_virtualization/proc_nvidia_gpu_passthrough_nvidia_gpu_passthrough
