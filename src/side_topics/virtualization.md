@@ -9,6 +9,6 @@ Hard to run virtualized instance on the server of your own unless the server sup
 
 ## GPU Passthrough for Windows Guest
 
-[Moved here](1)
+[Moved here][1]
 
 [1]: https://github.com/khoitd1997/fedora_kd/tree/master/userland/misc/kvm_vm

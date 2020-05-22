@@ -13,21 +13,21 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 
 ## Troubleshooting
 
-[This page](4) is an excellent tool for visual diagnostic.
+[This page][4] is an excellent tool for visual diagnostic.
 
-[Another page](6) pairing symptoms with solutions.
+[Another page][6] pairing symptoms with solutions.
 
 ## Calibrations
 
-[This video](3) has a pretty thorough list of things to check.
+[This video][3] has a pretty thorough list of things to check.
 
 There are not that many things, and they are to be done _per material_:
 
-- [Extruder Steps(esteps)](1)
-- [Temperature](2)
-- [Flow Rate](5)
+- [Extruder Steps(esteps)][1]
+- [Temperature][2]
+- [Flow Rate][5]
 
-[Good video about not calibrating too many things](7)
+[Good video about not calibrating too many things][7]
 
 Calibration data:
 

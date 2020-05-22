@@ -2,28 +2,28 @@
 
 ## General
 
-- [Embedded Template Library](1): Actually has a bunch of data structure and algorithms, also some extra stuffs like state machine.
+- [Embedded Template Library][1]: Actually has a bunch of data structure and algorithms, also some extra stuffs like state machine.
 
 ## CI/Testing
 
-- [Jamesmunns CI Article](6)
+- [Jamesmunns CI Article][6]
 
 ## Kernel Hacking
 
-- [Bootlin](7)
-- [Kernel Newbies](8)
-- [Embedded Linux Conference Presentations](9)
-- [Open Source Firmware Conference](10)
+- [Bootlin][7]
+- [Kernel Newbies][8]
+- [Embedded Linux Conference Presentations][9]
+- [Open Source Firmware Conference][10]
 
 ## Tooling
 
-- [Segger Ozone](5): Pretty decent visual debugger. Basic features are free.
-- [Segger RTT](4): Really fast printing even faster than SWO, even support color printing and has nice client application to view the printing.
-- [Segger SystemView](2): Can be used with any JLink(since RTT can be used with any JLink), note that this thing seems buggy, check [our own post](3).
+- [Segger Ozone][5]: Pretty decent visual debugger. Basic features are free.
+- [Segger RTT][4]: Really fast printing even faster than SWO, even support color printing and has nice client application to view the printing.
+- [Segger SystemView][2]: Can be used with any JLink(since RTT can be used with any JLink), note that this thing seems buggy, check [our own post][3].
 
 ## Others
 
-- [Linux includes API for programming sound card](11)
+- [Linux includes API for programming sound card][11]
 
 [1]: https://github.com/ETLCPP/etl/tree/master/include/etl/atomic
 [2]: https://www.segger.com/products/development-tools/systemview/

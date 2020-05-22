@@ -2,12 +2,12 @@
 
 List things like tools that are not mature enough now but has potential for future use
 
-- [Github Codespace](1): Directly edit code on Github using VsCode.
-- [Include What You Use](2): Lots of false positives last time checked.
-- [Vscode Neovim](3): Some weird bugs last time checked.
-- [Vscode Product Icon](4): Allow third-party to customize more than just file icons starting 04/2020. Last time checked, no available extensions to support this.
-- [Vscode Settings Sync](5): Built-in support for sync, was insiders only last time.
-- [Vscode Draw IO Extension](6): Use Draw.io offline
+- [Github Codespace][1]: Directly edit code on Github using VsCode.
+- [Include What You Use][2]: Lots of false positives last time checked.
+- [Vscode Neovim][3]: Some weird bugs last time checked.
+- [Vscode Product Icon][4]: Allow third-party to customize more than just file icons starting 04/2020. Last time checked, no available extensions to support this.
+- [Vscode Settings Sync][5]: Built-in support for sync, was insiders only last time.
+- [Vscode Draw IO Extension][6]: Use Draw.io offline
 
 [1]: https://github.com/features/codespaces
 [2]: https://include-what-you-use.org/

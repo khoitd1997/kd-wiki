@@ -8,7 +8,7 @@ PlantUML allows you to describe your UML diagram using text so it's pretty conve
 
 ## UML state machine
 
-The [Wikipedia page on UML state machine is a really good reference](1)
+The [Wikipedia page on UML state machine is a really good reference][1]
 
 Below are common notations for quick reference, note that the dashed lines are for comments.
 

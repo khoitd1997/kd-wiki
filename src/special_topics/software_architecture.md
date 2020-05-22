@@ -10,11 +10,11 @@ Mono and poly are not exclusive, you can have a repo that can multiple libraries
 
 ## Estimation
 
-This [Embedded Artistry articles](2) demonstrates approaches to predicting. There are various rules but the good ones seem to avoid the mob effects and the come-first mentality where the first estimation is repeated by everyone else. They usually accomplish these two things by making sure everyone's estimation is taken into account anonymously and at the same time.
+This [Embedded Artistry articles][2] demonstrates approaches to predicting. There are various rules but the good ones seem to avoid the mob effects and the come-first mentality where the first estimation is repeated by everyone else. They usually accomplish these two things by making sure everyone's estimation is taken into account anonymously and at the same time.
 
 ## Designing Abstractions
 
-As illustrated in [this article](1), lack of abstraction is almost as prevalent as premature abstraction, when we find ourselves bolting more stuffs on the old code, it's time to rethink the design. Have patience before refactoring to avoid over abstraction.
+As illustrated in [this article][1], lack of abstraction is almost as prevalent as premature abstraction, when we find ourselves bolting more stuffs on the old code, it's time to rethink the design. Have patience before refactoring to avoid over abstraction.
 
 [1]: https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction
 [2]: https://embeddedartistry.com/blog/2020/03/16/improving-our-estimation-abilities-embedded-artistrys-approach/

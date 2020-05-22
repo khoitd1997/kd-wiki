@@ -51,19 +51,19 @@ HLS are high level languages like C and C++ and get compiled down to RTL. It is 
 
 ### General
 
-- [Verilator](1): Open source simulator.
-- [Yosys](2): Open source Verilog Synthesis, actually support Xilinx 7 series chip.
-- [Yosys Manual](5): Contain quite a lot of information about Verilog is Synthesized.
-- [Detailed paper about open source Verilog Workflow](3)
-- [Free VHDL book](4)
-- [Chisel](8): Open source HDL language in Scala, that is designed by Berkeley and used by Google TPU. It can actually compile down to Verilog so it should theoretically work with everything but the reality is more complicated than that.
-- [Rocket Chip Generator](7): Tooling for generating a RisC-V SOC.
+- [Verilator][1]: Open source simulator.
+- [Yosys][2]: Open source Verilog Synthesis, actually support Xilinx 7 series chip.
+- [Yosys Manual][5]: Contain quite a lot of information about Verilog is Synthesized.
+- [Detailed paper about open source Verilog Workflow][3]
+- [Free VHDL book][4]
+- [Chisel][8]: Open source HDL language in Scala, that is designed by Berkeley and used by Google TPU. It can actually compile down to Verilog so it should theoretically work with everything but the reality is more complicated than that.
+- [Rocket Chip Generator][7]: Tooling for generating a RisC-V SOC.
 
 VHDL is apparently way harder to parse than Verilog so that's why open source tooling is focused on Verilog right now, there are efforts to get VHDL working though.
 
 ### Xilinx
 
-[Xilinx Vitis](6): Goes from languages like C++, Python to gate level. This is based on Xilinx SDx which compiles C++ to hardware code.
+[Xilinx Vitis][6]: Goes from languages like C++, Python to gate level. This is based on Xilinx SDx which compiles C++ to hardware code.
 
 [1]: https://en.wikipedia.org/wiki/Verilator
 [2]: http://www.clifford.at/yosys/

@@ -15,8 +15,8 @@
 
 ## Helpful Stuffs
 
-- [Device BLE Capability Database](1): Good if you have a SIG account, save a lot of guessing about your phone's BLE capability.
-- [NRFConnect App](2): Pretty good for testing both client and server. Also allow you to discover some BLE capabilities of your phone.
+- [Device BLE Capability Database][1]: Good if you have a SIG account, save a lot of guessing about your phone's BLE capability.
+- [NRFConnect App][2]: Pretty good for testing both client and server. Also allow you to discover some BLE capabilities of your phone.
 
 [1]: https://launchstudio.bluetooth.com/Listings/Search
 [2]: https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en_US

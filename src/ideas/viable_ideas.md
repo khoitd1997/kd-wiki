@@ -6,7 +6,7 @@ Ideas that haven't gone through preliminary research:
 
 ## Learn Rust by writing a command line application for JLink RTT Viewer
 
-[JLink RTT Viewer](1) is a debugging technology by Segger that is touted to be faster than most of the market.
+[JLink RTT Viewer][1] is a debugging technology by Segger that is touted to be faster than most of the market.
 
 The easiest way would have been to use the JLink SDK which contains client code but it costs a lot of money. The most viable way then is to use telnet like JLinkRTTClient does(although it can only see channel 0).
 
