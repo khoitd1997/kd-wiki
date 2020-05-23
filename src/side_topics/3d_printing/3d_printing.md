@@ -21,7 +21,7 @@ The Ender 3 has some serious problems with stringing as shown [here][12]. The vi
 
 List of good test prints:
 
-- [Fast Stringing Test][8]: Good for fast test, but _the probably won't get rid of all string_.
+- [Fast Stringing Test][8]: Good for fast test, but _the probably won't get rid of all string_. The best profile so far still has string on top but they are easy to remove.
 - [More Commonly Used Stringing Test][11]: Should use this for ease of comparison with people like youtubers. Proper config should get rid of all string on this one. Can be used for rapid testing if printing partially.
 - [Cat Print][16]: A more elaborate test that is shorter to print compared to Benchy.
 - [Poly Peal Tower][17]: A tough test that is less time than Benchy but more than Cat, should probably use this instead of Benchy.
