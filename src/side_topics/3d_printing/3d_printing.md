@@ -8,6 +8,7 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 
 - Octo Print(as well as Cura integration)
 - New Marlin firmware
+- SKR Mini E3 v1.2
 
 ### To be Done
 
@@ -31,13 +32,15 @@ List of good test prints:
 
 The _Cura_ profiles are stored in the same directory as this file.
 
-[Bed Leveling Script][13] gotten from [this video][14]. Load the script into the SD card and every time it's done with one corner, press the button(won't work if done through octoprint).
+For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless.
 
 [This video][3] has a pretty thorough list of things to check.
 
 [Belt Tensioning][15] _VERY IMPORTANT_.
 
-There are not that many things, and they are to be done:
+Estep: 98.9 steps/mm.
+
+There are not that many things, and they are to be done _PER MATERIAL_:
 
 - [Extruder Steps(esteps)][1]
 - [Temperature][2]: Not exactly necessary, do it if have time or suspecting temperature issue.
@@ -56,8 +59,6 @@ There are not that many things, and they are to be done:
 [10]: https://all3dp.com/2/cura-retraction-settings-how-to-avoid-stringing/
 [11]: https://www.thingiverse.com/thing:2766430
 [12]: https://www.youtube.com/watch?v=_QRb54zVPfQ
-[13]: https://www.thingiverse.com/download:5649391
-[14]: https://www.youtube.com/watch?v=_EfWVUJjBdA&t=304s
 [15]: https://www.youtube.com/watch?time_continue=251&v=PTvUSPapnuE&feature=emb_logo
 [16]: https://www.thingiverse.com/thing:1545913
 [17]: https://www.thingiverse.com/thing:2064029
