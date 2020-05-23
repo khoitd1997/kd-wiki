@@ -21,13 +21,22 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 - Add BLTouch: Be really careful with which instruction to follow due to changing firmware resulting in different recommended places to plug the BLTouch in, [here][22] is a pretty recent guide. The bed is still pretty level after a couple of prints now(even when heavy scraping was used to remove those prints) so this is fairly unnecessary, also manual bed leveling in Marlin is a breeze.
 - Replacing part fan: Blower style, aka radial style. The fan size is 5015, most of the fans on Amazon is pretty bad and the blower doesn't seem to make a lot of noise so if the machine is still loud after the extruder and electronics fans are replaced then do this.
 
-## Troubleshooting
+## Calibrations
 
-[This page][4] is an excellent tool for visual diagnostic.
+[This page][4] is an excellent tool for visual diagnostic. Although it may not always be accurate.
 
-[Another page][6] pairing symptoms with solutions.
+[This video][3] has a pretty thorough list of things to check.
 
-The Ender 3 has some serious problems with stringing as shown [here][12]. The video mentions that the slicer has a huge impact as well as to enable/disable z-hop depending on the situation.
+[Belt Tensioning][15] _VERY IMPORTANT_.
+
+For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless.
+
+Calibrations _PER MATERIAL_:
+
+- Temperature: Do [temperature tower][2] when other issues are already sorted out.
+- Flow rate
+
+[Good video about not calibrating too many things][7]
 
 List of good test prints:
 
@@ -37,25 +46,23 @@ List of good test prints:
 - [Poly Peal Tower][17]: A tough test that is less time than Benchy but more than Cat, should probably use this instead of Benchy.
 - [All-in-one Test][9]: Take awhile to print so probably do this last.
 
-## Calibrations and Settings
+## Settings
 
-The _Cura_ profiles are stored in the same directory as this file.
+### Printer
 
-For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless.
+Printer settings are either enabled through the LCD and saved into EEPROM or enabled during compilation.
 
-[This video][3] has a pretty thorough list of things to check.
+EEPROM:
 
-[Belt Tensioning][15] _VERY IMPORTANT_.
+- [Extruder Steps Calibration(esteps)][1]: 98.9 steps/mm.
 
-Estep: 98.9 steps/mm.
+Compile Time:
 
-There are not that many things, and they are to be done _PER MATERIAL_:
+- Disable Hybrid Threshold: Mostly because the z axis moves pretty loudly, this is probably a bug so check back later.
 
-- [Extruder Steps(esteps)][1]
-- [Temperature][2]: Not exactly necessary, do it if have time or suspecting temperature issue.
-- Flow rate: Use the string test and adjust the flow rate until satisfaction. The test that uses caliper to measure 4 sides is not that accurate since caliper measurement changes depending on how hard you press the caliper.
+### Cura
 
-[Good video about not calibrating too many things][7]
+The profiles for each material are stored in the same directory as this file.
 
 [1]: https://www.youtube.com/watch?v=X3A9Ir2SreI
 [2]: https://hobbyhoarder.net/temperature-tower/
@@ -67,7 +74,6 @@ There are not that many things, and they are to be done _PER MATERIAL_:
 [9]: https://www.thingiverse.com/thing:2656594/files
 [10]: https://all3dp.com/2/cura-retraction-settings-how-to-avoid-stringing/
 [11]: https://www.thingiverse.com/thing:2766430
-[12]: https://www.youtube.com/watch?v=_QRb54zVPfQ
 [15]: https://www.youtube.com/watch?time_continue=251&v=PTvUSPapnuE&feature=emb_logo
 [16]: https://www.thingiverse.com/thing:1545913
 [17]: https://www.thingiverse.com/thing:2064029
