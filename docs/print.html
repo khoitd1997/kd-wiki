@@ -359,7 +359,7 @@
 <h2><a class="header" href="#gpu-passthrough-for-windows-guest" id="gpu-passthrough-for-windows-guest">GPU Passthrough for Windows Guest</a></h2>
 <p><a href="https://github.com/khoitd1997/fedora_kd/tree/master/userland/misc/kvm_vm">Moved here</a></p>
 <h1><a class="header" href="#3d-printing" id="3d-printing">3D Printing</a></h1>
-<p>Got an Ender 3 in May 2020 because it's one of the cheapest while also having one of the biggest communities.</p>
+<p>Got an Ender 3 in May 2020 because it's one of the cheapest while also having one of the biggest communities and big print bed.</p>
 <h2><a class="header" href="#mods-and-enhancements" id="mods-and-enhancements">Mods and Enhancements</a></h2>
 <h3><a class="header" href="#completed" id="completed">Completed</a></h3>
 <ul>
@@ -367,14 +367,24 @@
 <li>New Marlin firmware</li>
 <li>SKR Mini E3 v1.2</li>
 </ul>
-<h3><a class="header" href="#to-be-done" id="to-be-done">To be Done</a></h3>
+<h3><a class="header" href="#planned" id="planned">Planned</a></h3>
+<ul>
+<li>Replacing the electronics and extruder fan and maybe the fan ducts: With the SKR upgrade, the fan is now the loudest component. The fan size is 4010, but a 4020 would still work, <a href="https://www.digikey.com/product-detail/en/sunon-fans/MF40202V2-1000U-A99/259-1801-ND/6198739">this</a> is a good one(or any that is 24V, ~7 CFM, ~20db), remember to order 2 next time buying at Digikey. For fanduct, <a href="https://www.thingiverse.com/thing:3092044">Hero Me</a> is a good one, although the print takes a lot of post-processing.</li>
+</ul>
+<h3><a class="header" href="#situational" id="situational">Situational</a></h3>
+<ul>
+<li>Replace printbed: <a href="https://www.youtube.com/watch?v=baVA5G8HH04&amp;app=desktop">Comparision Video</a>, doesn't seem necessary now as the default print bed does its job well. Also check out <a href="https://www.amazon.com/Gizmo-Dorks-Printer-Surface-Adhesive/dp/B074XLD5QH">PEI Sheet</a>.</li>
+<li>Change power supply: <a href="https://www.amazon.com/LRS-350-24-Switching-Supply-350-4W-115Vac/dp/B07RF38JXK">This one</a> is compatible, if upgrading the PSU, should probably change the fan too(<a href="https://www.thingiverse.com/thing:2967389">guide here</a>). The fan runs at <em>24V</em> so need either a power converter or a fan that supports that natively. Doesn't seem necessary for now but the PSU is a pretty bad one so if safety is a concern then this is probably essential.</li>
+<li>Add BLTouch: Be really careful with which instruction to follow due to changing firmware resulting in different recommended places to plug the BLTouch in, <a href="https://www.youtube.com/watch?v=l0kCD02BzzY">here</a> is a pretty recent guide. The bed is still pretty level after a couple of prints now(even when heavy scraping was used to remove those prints) so this is fairly unnecessary, also manual bed leveling in Marlin is a breeze.</li>
+<li>Replacing part fan: Blower style, aka radial style. The fan size is 5015, most of the fans on Amazon is pretty bad and the blower doesn't seem to make a lot of noise so if the machine is still loud after the extruder and electronics fans are replaced then do this.</li>
+</ul>
 <h2><a class="header" href="#troubleshooting" id="troubleshooting">Troubleshooting</a></h2>
 <p><a href="https://www.simplify3d.com/support/print-quality-troubleshooting/">This page</a> is an excellent tool for visual diagnostic.</p>
 <p><a href="https://support.3dverkstan.se/article/23-a-visual-ultimaker-troubleshooting-guide">Another page</a> pairing symptoms with solutions.</p>
 <p>The Ender 3 has some serious problems with stringing as shown <a href="https://www.youtube.com/watch?v=_QRb54zVPfQ">here</a>. The video mentions that the slicer has a huge impact as well as to enable/disable z-hop depending on the situation.</p>
 <p>List of good test prints:</p>
 <ul>
-<li><a href="https://www.thingiverse.com/thing:2219103">Fast Stringing Test</a>: Good for fast test, but <em>the probably won't get rid of all string</em>. The best profile so far still has string on top but they are easy to remove.</li>
+<li><a href="https://www.thingiverse.com/thing:2219103">Fast Stringing Test</a>: Good for fast test, but <em>some some strings will still remain</em>. The best profile so far still has string on top but they are easy to remove.</li>
 <li><a href="https://www.thingiverse.com/thing:2766430">More Commonly Used Stringing Test</a>: Should use this for ease of comparison with people like youtubers. Proper config should get rid of all string on this one. Can be used for rapid testing if printing partially.</li>
 <li><a href="https://www.thingiverse.com/thing:1545913">Cat Print</a>: A more elaborate test that is shorter to print compared to Benchy.</li>
 <li><a href="https://www.thingiverse.com/thing:2064029">Poly Peal Tower</a>: A tough test that is less time than Benchy but more than Cat, should probably use this instead of Benchy.</li>
