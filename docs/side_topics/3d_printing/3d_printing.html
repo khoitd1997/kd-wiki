@@ -167,10 +167,17 @@
 <li>Add BLTouch: Be really careful with which instruction to follow due to changing firmware resulting in different recommended places to plug the BLTouch in, <a href="https://www.youtube.com/watch?v=l0kCD02BzzY">here</a> is a pretty recent guide. The bed is still pretty level after a couple of prints now(even when heavy scraping was used to remove those prints) so this is fairly unnecessary, also manual bed leveling in Marlin is a breeze.</li>
 <li>Replacing part fan: Blower style, aka radial style. The fan size is 5015, most of the fans on Amazon is pretty bad and the blower doesn't seem to make a lot of noise so if the machine is still loud after the extruder and electronics fans are replaced then do this.</li>
 </ul>
-<h2><a class="header" href="#troubleshooting" id="troubleshooting">Troubleshooting</a></h2>
-<p><a href="https://www.simplify3d.com/support/print-quality-troubleshooting/">This page</a> is an excellent tool for visual diagnostic.</p>
-<p><a href="https://support.3dverkstan.se/article/23-a-visual-ultimaker-troubleshooting-guide">Another page</a> pairing symptoms with solutions.</p>
-<p>The Ender 3 has some serious problems with stringing as shown <a href="https://www.youtube.com/watch?v=_QRb54zVPfQ">here</a>. The video mentions that the slicer has a huge impact as well as to enable/disable z-hop depending on the situation.</p>
+<h2><a class="header" href="#calibrations" id="calibrations">Calibrations</a></h2>
+<p><a href="https://www.simplify3d.com/support/print-quality-troubleshooting/">This page</a> is an excellent tool for visual diagnostic. Although it may not always be accurate.</p>
+<p><a href="https://www.youtube.com/watch?v=qddYsbHawno&amp;feature=youtu.be">This video</a> has a pretty thorough list of things to check.</p>
+<p><a href="https://www.youtube.com/watch?time_continue=251&amp;v=PTvUSPapnuE&amp;feature=emb_logo">Belt Tensioning</a> <em>VERY IMPORTANT</em>.</p>
+<p>For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless.</p>
+<p>Calibrations <em>PER MATERIAL</em>:</p>
+<ul>
+<li>Temperature: Do <a href="https://hobbyhoarder.net/temperature-tower/">temperature tower</a> when other issues are already sorted out.</li>
+<li>Flow rate</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=Mbn1ckR86Z8">Good video about not calibrating too many things</a></p>
 <p>List of good test prints:</p>
 <ul>
 <li><a href="https://www.thingiverse.com/thing:2219103">Fast Stringing Test</a>: Good for fast test, but <em>some some strings will still remain</em>. The best profile so far still has string on top but they are easy to remove.</li>
@@ -179,19 +186,19 @@
 <li><a href="https://www.thingiverse.com/thing:2064029">Poly Peal Tower</a>: A tough test that is less time than Benchy but more than Cat, should probably use this instead of Benchy.</li>
 <li><a href="https://www.thingiverse.com/thing:2656594/files">All-in-one Test</a>: Take awhile to print so probably do this last.</li>
 </ul>
-<h2><a class="header" href="#calibrations-and-settings" id="calibrations-and-settings">Calibrations and Settings</a></h2>
-<p>The <em>Cura</em> profiles are stored in the same directory as this file.</p>
-<p>For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless.</p>
-<p><a href="https://www.youtube.com/watch?v=qddYsbHawno&amp;feature=youtu.be">This video</a> has a pretty thorough list of things to check.</p>
-<p><a href="https://www.youtube.com/watch?time_continue=251&amp;v=PTvUSPapnuE&amp;feature=emb_logo">Belt Tensioning</a> <em>VERY IMPORTANT</em>.</p>
-<p>Estep: 98.9 steps/mm.</p>
-<p>There are not that many things, and they are to be done <em>PER MATERIAL</em>:</p>
+<h2><a class="header" href="#settings" id="settings">Settings</a></h2>
+<h3><a class="header" href="#printer" id="printer">Printer</a></h3>
+<p>Printer settings are either enabled through the LCD and saved into EEPROM or enabled during compilation.</p>
+<p>EEPROM:</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=X3A9Ir2SreI">Extruder Steps(esteps)</a></li>
-<li><a href="https://hobbyhoarder.net/temperature-tower/">Temperature</a>: Not exactly necessary, do it if have time or suspecting temperature issue.</li>
-<li>Flow rate: Use the string test and adjust the flow rate until satisfaction. The test that uses caliper to measure 4 sides is not that accurate since caliper measurement changes depending on how hard you press the caliper.</li>
+<li><a href="https://www.youtube.com/watch?v=X3A9Ir2SreI">Extruder Steps Calibration(esteps)</a>: 98.9 steps/mm.</li>
 </ul>
-<p><a href="https://www.youtube.com/watch?v=Mbn1ckR86Z8">Good video about not calibrating too many things</a></p>
+<p>Compile Time:</p>
+<ul>
+<li>Disable Hybrid Threshold: Mostly because the z axis moves pretty loudly, this is probably a bug so check back later.</li>
+</ul>
+<h3><a class="header" href="#cura" id="cura">Cura</a></h3>
+<p>The profiles for each material are stored in the same directory as this file.</p>
 
                     </main>
 
