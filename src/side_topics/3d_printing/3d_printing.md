@@ -9,6 +9,12 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 - Octo Print(as well as Cura integration)
 - New Marlin firmware
 - SKR Mini E3 v1.2
+- [Raspberry Pi Pin Cover][28]
+- [LCD Cover][29]
+- [Knob][30]: Very convenient for replacing filament.
+- [Cable Clips][31]: Nice for organizing cables.
+- [Filament Guide][32]: Can be a pain to set up, but DO NOT DO LONG PRINT WITHOUT THIS.
+- [Bowden Tube Tensioner][33]: Not sure if it helps but do it just to be sure.
 
 ### Planned
 
@@ -16,6 +22,8 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 
 ### Situational
 
+- [Damping Feet][26]: Print this if have time and want to reduce noise.
+- [Aluminum Extruder][25]: Lots of people swear by this, but it others say that with the filament guide, this shouldn't happen.
 - Replace printbed: [Comparision Video][18], doesn't seem necessary now as the default print bed does its job well. Also check out [PEI Sheet][19].
 - Change power supply: [This one][20] is compatible, if upgrading the PSU, should probably change the fan too([guide here][21]). The fan runs at _24V_ so need either a power converter or a fan that supports that natively. Doesn't seem necessary for now but the PSU is a pretty bad one so if safety is a concern then this is probably essential.
 - Add BLTouch: Be really careful with which instruction to follow due to changing firmware resulting in different recommended places to plug the BLTouch in, [here][22] is a pretty recent guide. The bed is still pretty level after a couple of prints now(even when heavy scraping was used to remove those prints) so this is fairly unnecessary, also manual bed leveling in Marlin is a breeze.
@@ -29,7 +37,9 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 
 [Belt Tensioning][15] _VERY IMPORTANT_.
 
-For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless.
+NOTE: The SKR Mini has some kind of bug, even if the LCD shows Stealthchop is enabled, use M569 to make sure it's in Stealthchop, currently, the jumper on the board is on SpreadCycle by default and Stealthchop is enabled using firmware.
+
+For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless. If there have been major shifts, level with the knob first.
 
 Calibrations _PER MATERIAL_:
 
@@ -44,6 +54,7 @@ List of good test prints:
 - [More Commonly Used Stringing Test][11]: Should use this for ease of comparison with people like youtubers. Proper config should get rid of all string on this one. Can be used for rapid testing if printing partially.
 - [Cat Print][16]: A more elaborate test that is shorter to print compared to Benchy.
 - [Poly Peal Tower][17]: A tough test that is less time than Benchy but more than Cat, should probably use this instead of Benchy.
+- [For Testing Support][27]
 - [All-in-one Test][9]: Take awhile to print so probably do this last.
 
 ## Settings
@@ -62,7 +73,12 @@ Compile Time:
 
 ### Cura
 
-The profiles for each material are stored in the same directory as this file.
+The profiles for each material are stored in the same directory as this file. However, variation of the profile is probably necessary sometimes. General guidelines:
+
+- Infill > 50% for things that will be manhandled. Around 20% is good for things that is usually not touched.
+- Print speed 40-60 and layer height < 0.2 for things that need to look pretty.
+- Wall count of 7 for things that need to be strong.
+- Temperature nozzle > 200 and bed = 60 for fast print or strong print.
 
 [1]: https://www.youtube.com/watch?v=X3A9Ir2SreI
 [2]: https://hobbyhoarder.net/temperature-tower/
@@ -84,3 +100,12 @@ The profiles for each material are stored in the same directory as this file.
 [22]: https://www.youtube.com/watch?v=l0kCD02BzzY
 [23]: https://www.digikey.com/product-detail/en/sunon-fans/MF40202V2-1000U-A99/259-1801-ND/6198739
 [24]: https://www.thingiverse.com/thing:3092044
+[25]: https://www.reddit.com/r/ender3/comments/b37y32/ender_3_fix_aluminum_extruder_upgrade/
+[26]: https://www.thingiverse.com/thing:2913473
+[27]: https://www.thingiverse.com/thing:3064242
+[28]: https://www.thingiverse.com/thing:1874648/files
+[29]: https://www.thingiverse.com/thing:3004849/files
+[30]: https://www.thingiverse.com/thing:3176144/files
+[31]: https://www.thingiverse.com/thing:2960375/files
+[32]: https://www.thingiverse.com/thing:3052488
+[33]: https://www.thingiverse.com/thing:936611/files
