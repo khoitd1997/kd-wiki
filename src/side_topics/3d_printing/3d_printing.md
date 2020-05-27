@@ -6,7 +6,9 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 
 ### Completed
 
-- Octo Print(as well as Cura integration)
+- Octo Print with:
+  - Cura integration
+  - PrintTimeGenius
 - New Marlin firmware
 - SKR Mini E3 v1.2
 - [Raspberry Pi Pin Cover][28]
@@ -15,10 +17,14 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 - [Cable Clips][31]: Nice for organizing cables.
 - [Filament Guide][32]: Can be a pain to set up, but DO NOT DO LONG PRINT WITHOUT THIS.
 - [Bowden Tube Tensioner][33]: Not sure if it helps but do it just to be sure.
+- [Raspberry Pi 3 Case][35]
+- [Ender 3 Tray][36]
+- [Tool Holder][37]
 
 ### Planned
 
 - Replacing the electronics and extruder fan and maybe the fan ducts: With the SKR upgrade, the fan is now the loudest component. The fan size is 4010, but a 4020 would still work, [this][23] is a good one(or any that is 24V, ~7 CFM, ~20db), remember to order 2 next time buying at Digikey. For fanduct, [Hero Me][24] is a good one, although the print takes a lot of post-processing.
+- [Hotend chainlinks][34]: Do it if have time but there are some concerns like the thing not staying on or making noise.
 
 ### Situational
 
@@ -37,9 +43,7 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 
 [Belt Tensioning][15] _VERY IMPORTANT_.
 
-NOTE: The SKR Mini has some kind of bug, even if the LCD shows Stealthchop is enabled, use M569 to make sure it's in Stealthchop, currently, the jumper on the board is on SpreadCycle by default and Stealthchop is enabled using firmware.
-
-For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless. If there have been major shifts, level with the knob first.
+For bed leveling, use the corner leveling(using the knobs) and then manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless. This Ender 3 tends to under-extrude, so when leveling, stop when you feel barely any friction in the paper.
 
 Calibrations _PER MATERIAL_:
 
@@ -61,11 +65,15 @@ List of good test prints:
 
 ### Printer
 
+NOTE: The SKR Mini has some kind of bug, even if the LCD shows Stealthchop is enabled, use M569 to make sure it's in Stealthchop, currently, the jumper on the board is on SpreadCycle by default and Stealthchop is enabled using firmware.
+
 Printer settings are either enabled through the LCD and saved into EEPROM or enabled during compilation.
 
 EEPROM:
 
 - [Extruder Steps Calibration(esteps)][1]: 98.9 steps/mm.
+- Stealthchop: On for all axis
+- Bed leveling: On
 
 Compile Time:
 
@@ -109,3 +117,7 @@ The profiles for each material are stored in the same directory as this file. Ho
 [31]: https://www.thingiverse.com/thing:2960375/files
 [32]: https://www.thingiverse.com/thing:3052488
 [33]: https://www.thingiverse.com/thing:936611/files
+[34]: https://www.thingiverse.com/thing:3132855
+[35]: https://www.thingiverse.com/thing:3016364
+[36]: https://www.thingiverse.com/thing:2957317/files
+[37]: https://www.thingiverse.com/thing:2886395
