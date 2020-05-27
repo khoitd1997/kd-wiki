@@ -155,6 +155,12 @@
 <li>Octo Print(as well as Cura integration)</li>
 <li>New Marlin firmware</li>
 <li>SKR Mini E3 v1.2</li>
+<li><a href="https://www.thingiverse.com/thing:1874648/files">Raspberry Pi Pin Cover</a></li>
+<li><a href="https://www.thingiverse.com/thing:3004849/files">LCD Cover</a></li>
+<li><a href="https://www.thingiverse.com/thing:3176144/files">Knob</a>: Very convenient for replacing filament.</li>
+<li><a href="https://www.thingiverse.com/thing:2960375/files">Cable Clips</a>: Nice for organizing cables.</li>
+<li><a href="https://www.thingiverse.com/thing:3052488">Filament Guide</a>: Can be a pain to set up, but DO NOT DO LONG PRINT WITHOUT THIS.</li>
+<li><a href="https://www.thingiverse.com/thing:936611/files">Bowden Tube Tensioner</a>: Not sure if it helps but do it just to be sure.</li>
 </ul>
 <h3><a class="header" href="#planned" id="planned">Planned</a></h3>
 <ul>
@@ -162,6 +168,8 @@
 </ul>
 <h3><a class="header" href="#situational" id="situational">Situational</a></h3>
 <ul>
+<li><a href="https://www.thingiverse.com/thing:2913473">Damping Feet</a>: Print this if have time and want to reduce noise.</li>
+<li><a href="https://www.reddit.com/r/ender3/comments/b37y32/ender_3_fix_aluminum_extruder_upgrade/">Aluminum Extruder</a>: Lots of people swear by this, but it others say that with the filament guide, this shouldn't happen.</li>
 <li>Replace printbed: <a href="https://www.youtube.com/watch?v=baVA5G8HH04&amp;app=desktop">Comparision Video</a>, doesn't seem necessary now as the default print bed does its job well. Also check out <a href="https://www.amazon.com/Gizmo-Dorks-Printer-Surface-Adhesive/dp/B074XLD5QH">PEI Sheet</a>.</li>
 <li>Change power supply: <a href="https://www.amazon.com/LRS-350-24-Switching-Supply-350-4W-115Vac/dp/B07RF38JXK">This one</a> is compatible, if upgrading the PSU, should probably change the fan too(<a href="https://www.thingiverse.com/thing:2967389">guide here</a>). The fan runs at <em>24V</em> so need either a power converter or a fan that supports that natively. Doesn't seem necessary for now but the PSU is a pretty bad one so if safety is a concern then this is probably essential.</li>
 <li>Add BLTouch: Be really careful with which instruction to follow due to changing firmware resulting in different recommended places to plug the BLTouch in, <a href="https://www.youtube.com/watch?v=l0kCD02BzzY">here</a> is a pretty recent guide. The bed is still pretty level after a couple of prints now(even when heavy scraping was used to remove those prints) so this is fairly unnecessary, also manual bed leveling in Marlin is a breeze.</li>
@@ -171,7 +179,8 @@
 <p><a href="https://www.simplify3d.com/support/print-quality-troubleshooting/">This page</a> is an excellent tool for visual diagnostic. Although it may not always be accurate.</p>
 <p><a href="https://www.youtube.com/watch?v=qddYsbHawno&amp;feature=youtu.be">This video</a> has a pretty thorough list of things to check.</p>
 <p><a href="https://www.youtube.com/watch?time_continue=251&amp;v=PTvUSPapnuE&amp;feature=emb_logo">Belt Tensioning</a> <em>VERY IMPORTANT</em>.</p>
-<p>For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless.</p>
+<p>NOTE: The SKR Mini has some kind of bug, even if the LCD shows Stealthchop is enabled, use M569 to make sure it's in Stealthchop, currently, the jumper on the board is on SpreadCycle by default and Stealthchop is enabled using firmware.</p>
+<p>For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless. If there have been major shifts, level with the knob first.</p>
 <p>Calibrations <em>PER MATERIAL</em>:</p>
 <ul>
 <li>Temperature: Do <a href="https://hobbyhoarder.net/temperature-tower/">temperature tower</a> when other issues are already sorted out.</li>
@@ -184,6 +193,7 @@
 <li><a href="https://www.thingiverse.com/thing:2766430">More Commonly Used Stringing Test</a>: Should use this for ease of comparison with people like youtubers. Proper config should get rid of all string on this one. Can be used for rapid testing if printing partially.</li>
 <li><a href="https://www.thingiverse.com/thing:1545913">Cat Print</a>: A more elaborate test that is shorter to print compared to Benchy.</li>
 <li><a href="https://www.thingiverse.com/thing:2064029">Poly Peal Tower</a>: A tough test that is less time than Benchy but more than Cat, should probably use this instead of Benchy.</li>
+<li><a href="https://www.thingiverse.com/thing:3064242">For Testing Support</a></li>
 <li><a href="https://www.thingiverse.com/thing:2656594/files">All-in-one Test</a>: Take awhile to print so probably do this last.</li>
 </ul>
 <h2><a class="header" href="#settings" id="settings">Settings</a></h2>
@@ -198,7 +208,13 @@
 <li>Disable Hybrid Threshold: Mostly because the z axis moves pretty loudly, this is probably a bug so check back later.</li>
 </ul>
 <h3><a class="header" href="#cura" id="cura">Cura</a></h3>
-<p>The profiles for each material are stored in the same directory as this file.</p>
+<p>The profiles for each material are stored in the same directory as this file. However, variation of the profile is probably necessary sometimes. General guidelines:</p>
+<ul>
+<li>Infill &gt; 50% for things that will be manhandled. Around 20% is good for things that is usually not touched.</li>
+<li>Print speed 40-60 and layer height &lt; 0.2 for things that need to look pretty.</li>
+<li>Wall count of 7 for things that need to be strong.</li>
+<li>Temperature nozzle &gt; 200 and bed = 60 for fast print or strong print.</li>
+</ul>
 
                     </main>
 
