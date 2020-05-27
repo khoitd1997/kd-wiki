@@ -363,7 +363,12 @@
 <h2><a class="header" href="#mods-and-enhancements" id="mods-and-enhancements">Mods and Enhancements</a></h2>
 <h3><a class="header" href="#completed" id="completed">Completed</a></h3>
 <ul>
-<li>Octo Print(as well as Cura integration)</li>
+<li>Octo Print with:
+<ul>
+<li>Cura integration</li>
+<li>PrintTimeGenius</li>
+</ul>
+</li>
 <li>New Marlin firmware</li>
 <li>SKR Mini E3 v1.2</li>
 <li><a href="https://www.thingiverse.com/thing:1874648/files">Raspberry Pi Pin Cover</a></li>
@@ -372,10 +377,14 @@
 <li><a href="https://www.thingiverse.com/thing:2960375/files">Cable Clips</a>: Nice for organizing cables.</li>
 <li><a href="https://www.thingiverse.com/thing:3052488">Filament Guide</a>: Can be a pain to set up, but DO NOT DO LONG PRINT WITHOUT THIS.</li>
 <li><a href="https://www.thingiverse.com/thing:936611/files">Bowden Tube Tensioner</a>: Not sure if it helps but do it just to be sure.</li>
+<li><a href="https://www.thingiverse.com/thing:3016364">Raspberry Pi 3 Case</a></li>
+<li><a href="https://www.thingiverse.com/thing:2957317/files">Ender 3 Tray</a></li>
+<li><a href="https://www.thingiverse.com/thing:2886395">Tool Holder</a></li>
 </ul>
 <h3><a class="header" href="#planned" id="planned">Planned</a></h3>
 <ul>
 <li>Replacing the electronics and extruder fan and maybe the fan ducts: With the SKR upgrade, the fan is now the loudest component. The fan size is 4010, but a 4020 would still work, <a href="https://www.digikey.com/product-detail/en/sunon-fans/MF40202V2-1000U-A99/259-1801-ND/6198739">this</a> is a good one(or any that is 24V, ~7 CFM, ~20db), remember to order 2 next time buying at Digikey. For fanduct, <a href="https://www.thingiverse.com/thing:3092044">Hero Me</a> is a good one, although the print takes a lot of post-processing.</li>
+<li><a href="https://www.thingiverse.com/thing:3132855">Hotend chainlinks</a>: Do it if have time but there are some concerns like the thing not staying on or making noise.</li>
 </ul>
 <h3><a class="header" href="#situational" id="situational">Situational</a></h3>
 <ul>
@@ -390,8 +399,7 @@
 <p><a href="https://www.simplify3d.com/support/print-quality-troubleshooting/">This page</a> is an excellent tool for visual diagnostic. Although it may not always be accurate.</p>
 <p><a href="https://www.youtube.com/watch?v=qddYsbHawno&amp;feature=youtu.be">This video</a> has a pretty thorough list of things to check.</p>
 <p><a href="https://www.youtube.com/watch?time_continue=251&amp;v=PTvUSPapnuE&amp;feature=emb_logo">Belt Tensioning</a> <em>VERY IMPORTANT</em>.</p>
-<p>NOTE: The SKR Mini has some kind of bug, even if the LCD shows Stealthchop is enabled, use M569 to make sure it's in Stealthchop, currently, the jumper on the board is on SpreadCycle by default and Stealthchop is enabled using firmware.</p>
-<p>For bed leveling, use the manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless. If there have been major shifts, level with the knob first.</p>
+<p>For bed leveling, use the corner leveling(using the knobs) and then manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless. This Ender 3 tends to under-extrude, so when leveling, stop when you feel barely any friction in the paper.</p>
 <p>Calibrations <em>PER MATERIAL</em>:</p>
 <ul>
 <li>Temperature: Do <a href="https://hobbyhoarder.net/temperature-tower/">temperature tower</a> when other issues are already sorted out.</li>
@@ -409,10 +417,13 @@
 </ul>
 <h2><a class="header" href="#settings" id="settings">Settings</a></h2>
 <h3><a class="header" href="#printer" id="printer">Printer</a></h3>
+<p>NOTE: The SKR Mini has some kind of bug, even if the LCD shows Stealthchop is enabled, use M569 to make sure it's in Stealthchop, currently, the jumper on the board is on SpreadCycle by default and Stealthchop is enabled using firmware.</p>
 <p>Printer settings are either enabled through the LCD and saved into EEPROM or enabled during compilation.</p>
 <p>EEPROM:</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=X3A9Ir2SreI">Extruder Steps Calibration(esteps)</a>: 98.9 steps/mm.</li>
+<li>Stealthchop: On for all axis</li>
+<li>Bed leveling: On</li>
 </ul>
 <p>Compile Time:</p>
 <ul>
