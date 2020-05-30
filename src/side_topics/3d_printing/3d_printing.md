@@ -20,6 +20,9 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 - [Raspberry Pi 3 Case][35]
 - [Ender 3 Tray][36]
 - [Tool Holder][37]
+- [Adjustable Feet][38]: WILL NEED RUBBER PAD ON THE BOTTOM.
+- [Cable Chain][39]
+- [Filament Holder][40]
 
 ### Planned
 
@@ -43,7 +46,7 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 
 [Belt Tensioning][15] _VERY IMPORTANT_.
 
-For bed leveling, use the corner leveling(using the knobs) and then manual bed leveling built into Marlin, it uses 9 point leveling and the process is pretty quick and painless. This Ender 3 tends to under-extrude, so when leveling, stop when you feel barely any friction in the paper.
+For bed leveling, use the corner leveling(using the knobs) and then manual bed leveling built into Marlin, note that the manual bed leveling offset should be small(like in 0.5 range), if it's too big, do corner leveling again. This Ender 3 tends to under-extrude, so when leveling, stop when you feel barely any friction in the paper.
 
 Calibrations _PER MATERIAL_:
 
@@ -120,4 +123,7 @@ The profiles for each material are stored in the same directory as this file. Ho
 [34]: https://www.thingiverse.com/thing:3132855
 [35]: https://www.thingiverse.com/thing:3016364
 [36]: https://www.thingiverse.com/thing:2957317/files
-[37]: https://www.thingiverse.com/thing:2886395
+[37]: https://www.thingiverse.com/thing:3554420/files
+[38]: https://www.thingiverse.com/thing:3322727
+[39]: https://www.thingiverse.com/thing:2920060/files
+[40]: https://www.thingiverse.com/thing:3209211/files
