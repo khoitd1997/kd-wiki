@@ -46,7 +46,7 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 
 [Belt Tensioning][15] _VERY IMPORTANT_.
 
-For bed leveling, use the corner leveling(using the knobs) and then manual bed leveling built into Marlin, note that the manual bed leveling offset should be small(like in 0.5 range), if it's too big, do corner leveling again. This Ender 3 tends to under-extrude, so when leveling, stop when you feel barely any friction in the paper.
+For bed leveling, use the corner leveling(using the knobs) and then manual bed leveling built into Marlin, note that the manual bed leveling offset should be small(like in 0.5 range), if it's too big, do corner leveling again. For manual bed leveling, stops when it's barely tight enough to crumb the paper, meaning not too light pressure but no too heavy either.
 
 Calibrations _PER MATERIAL_:
 
