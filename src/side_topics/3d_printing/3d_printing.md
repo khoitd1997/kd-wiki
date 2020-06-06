@@ -23,19 +23,21 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 - [Adjustable Feet][38]: WILL NEED RUBBER PAD ON THE BOTTOM.
 - [Cable Chain][39]
 - [Filament Holder][40]
+- [HeroMe Fans Enclosure][24] is a good one, although the print takes a lot of post-processing. A lot of the parts can be fragile, USE [this][43] for the duct part instead since Creality changed the fan and the original didn't update.
+- BLTouch: Follow [this link][41], NOTE: THE WIRES CAN BE LOOSE EASILY, MAKE SURE TO PUSH THEM IN HARD WHEN CONNECTING, SHOULD SEE BOTH A SOLID SMALL BLUE LED AND BIG RED LED. [This link][42] has a more complete list of the relevant settings but when there is conflict, follow the previous link.
+  - MIN_PROBE_EDGE: Need to be 20 to not hit the clip.
+  - MULTIPLE_PROBING: 2, just to be safe.
+- [Hotend chainlinks][34]: Works fine but didn't use the cover.
 
 ### Planned
 
-- Replacing the electronics and extruder fan and maybe the fan ducts: With the SKR upgrade, the fan is now the loudest component. The fan size is 4010, but a 4020 would still work, [this][23] is a good one(or any that is 24V, ~7 CFM, ~20db), remember to order 2 next time buying at Digikey. For fanduct, [Hero Me][24] is a good one, although the print takes a lot of post-processing.
-- [Hotend chainlinks][34]: Do it if have time but there are some concerns like the thing not staying on or making noise.
+- Replacing the electronics and extruder fan and maybe the fan ducts: With the SKR upgrade, the fan is now the loudest component. The fan size is 4010, but a 4020 would still work, [this][23] is a good one(or any that is 24V, ~7 CFM, ~20db), remember to order 2 next time buying at Digikey.
 
 ### Situational
 
-- [Damping Feet][26]: Print this if have time and want to reduce noise.
 - [Aluminum Extruder][25]: Lots of people swear by this, but it others say that with the filament guide, this shouldn't happen.
 - Replace printbed: [Comparision Video][18], doesn't seem necessary now as the default print bed does its job well. Also check out [PEI Sheet][19].
 - Change power supply: [This one][20] is compatible, if upgrading the PSU, should probably change the fan too([guide here][21]). The fan runs at _24V_ so need either a power converter or a fan that supports that natively. Doesn't seem necessary for now but the PSU is a pretty bad one so if safety is a concern then this is probably essential.
-- Add BLTouch: Be really careful with which instruction to follow due to changing firmware resulting in different recommended places to plug the BLTouch in, [here][22] is a pretty recent guide. The bed is still pretty level after a couple of prints now(even when heavy scraping was used to remove those prints) so this is fairly unnecessary, also manual bed leveling in Marlin is a breeze.
 - Replacing part fan: Blower style, aka radial style. The fan size is 5015, most of the fans on Amazon is pretty bad and the blower doesn't seem to make a lot of noise so if the machine is still loud after the extruder and electronics fans are replaced then do this.
 
 ## Calibrations
@@ -112,7 +114,6 @@ The profiles for each material are stored in the same directory as this file. Ho
 [23]: https://www.digikey.com/product-detail/en/sunon-fans/MF40202V2-1000U-A99/259-1801-ND/6198739
 [24]: https://www.thingiverse.com/thing:3092044
 [25]: https://www.reddit.com/r/ender3/comments/b37y32/ender_3_fix_aluminum_extruder_upgrade/
-[26]: https://www.thingiverse.com/thing:2913473
 [27]: https://www.thingiverse.com/thing:3064242
 [28]: https://www.thingiverse.com/thing:1874648/files
 [29]: https://www.thingiverse.com/thing:3004849/files
@@ -127,3 +128,6 @@ The profiles for each material are stored in the same directory as this file. Ho
 [38]: https://www.thingiverse.com/thing:3322727
 [39]: https://www.thingiverse.com/thing:2920060/files
 [40]: https://www.thingiverse.com/thing:3209211/files
+[41]: https://www.youtube.com/watch?v=p504oU-D6iE&feature=youtu.be
+[42]: https://www.reddit.com/r/ender3/comments/e894j7/marlin_20x_guide_for_ender_3_using_skr_mini_e3_v12/
+[43]: https://www.thingiverse.com/thing:3878340
