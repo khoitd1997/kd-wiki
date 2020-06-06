@@ -383,19 +383,24 @@
 <li><a href="https://www.thingiverse.com/thing:3322727">Adjustable Feet</a>: WILL NEED RUBBER PAD ON THE BOTTOM.</li>
 <li><a href="https://www.thingiverse.com/thing:2920060/files">Cable Chain</a></li>
 <li><a href="https://www.thingiverse.com/thing:3209211/files">Filament Holder</a></li>
+<li><a href="https://www.thingiverse.com/thing:3092044">HeroMe Fans Enclosure</a> is a good one, although the print takes a lot of post-processing. A lot of the parts can be fragile, USE <a href="https://www.thingiverse.com/thing:3878340">this</a> for the duct part instead since Creality changed the fan and the original didn't update.</li>
+<li>BLTouch: Follow <a href="https://www.youtube.com/watch?v=p504oU-D6iE&amp;feature=youtu.be">this link</a>, NOTE: THE WIRES CAN BE LOOSE EASILY, MAKE SURE TO PUSH THEM IN HARD WHEN CONNECTING, SHOULD SEE BOTH A SOLID SMALL BLUE LED AND BIG RED LED. <a href="https://www.reddit.com/r/ender3/comments/e894j7/marlin_20x_guide_for_ender_3_using_skr_mini_e3_v12/">This link</a> has a more complete list of the relevant settings but when there is conflict, follow the previous link.
+<ul>
+<li>MIN_PROBE_EDGE: Need to be 20 to not hit the clip.</li>
+<li>MULTIPLE_PROBING: 2, just to be safe.</li>
+</ul>
+</li>
+<li><a href="https://www.thingiverse.com/thing:3132855">Hotend chainlinks</a>: Works fine but didn't use the cover.</li>
 </ul>
 <h3><a class="header" href="#planned" id="planned">Planned</a></h3>
 <ul>
-<li>Replacing the electronics and extruder fan and maybe the fan ducts: With the SKR upgrade, the fan is now the loudest component. The fan size is 4010, but a 4020 would still work, <a href="https://www.digikey.com/product-detail/en/sunon-fans/MF40202V2-1000U-A99/259-1801-ND/6198739">this</a> is a good one(or any that is 24V, ~7 CFM, ~20db), remember to order 2 next time buying at Digikey. For fanduct, <a href="https://www.thingiverse.com/thing:3092044">Hero Me</a> is a good one, although the print takes a lot of post-processing.</li>
-<li><a href="https://www.thingiverse.com/thing:3132855">Hotend chainlinks</a>: Do it if have time but there are some concerns like the thing not staying on or making noise.</li>
+<li>Replacing the electronics and extruder fan and maybe the fan ducts: With the SKR upgrade, the fan is now the loudest component. The fan size is 4010, but a 4020 would still work, <a href="https://www.digikey.com/product-detail/en/sunon-fans/MF40202V2-1000U-A99/259-1801-ND/6198739">this</a> is a good one(or any that is 24V, ~7 CFM, ~20db), remember to order 2 next time buying at Digikey.</li>
 </ul>
 <h3><a class="header" href="#situational" id="situational">Situational</a></h3>
 <ul>
-<li><a href="https://www.thingiverse.com/thing:2913473">Damping Feet</a>: Print this if have time and want to reduce noise.</li>
 <li><a href="https://www.reddit.com/r/ender3/comments/b37y32/ender_3_fix_aluminum_extruder_upgrade/">Aluminum Extruder</a>: Lots of people swear by this, but it others say that with the filament guide, this shouldn't happen.</li>
 <li>Replace printbed: <a href="https://www.youtube.com/watch?v=baVA5G8HH04&amp;app=desktop">Comparision Video</a>, doesn't seem necessary now as the default print bed does its job well. Also check out <a href="https://www.amazon.com/Gizmo-Dorks-Printer-Surface-Adhesive/dp/B074XLD5QH">PEI Sheet</a>.</li>
 <li>Change power supply: <a href="https://www.amazon.com/LRS-350-24-Switching-Supply-350-4W-115Vac/dp/B07RF38JXK">This one</a> is compatible, if upgrading the PSU, should probably change the fan too(<a href="https://www.thingiverse.com/thing:2967389">guide here</a>). The fan runs at <em>24V</em> so need either a power converter or a fan that supports that natively. Doesn't seem necessary for now but the PSU is a pretty bad one so if safety is a concern then this is probably essential.</li>
-<li>Add BLTouch: Be really careful with which instruction to follow due to changing firmware resulting in different recommended places to plug the BLTouch in, <a href="https://www.youtube.com/watch?v=l0kCD02BzzY">here</a> is a pretty recent guide. The bed is still pretty level after a couple of prints now(even when heavy scraping was used to remove those prints) so this is fairly unnecessary, also manual bed leveling in Marlin is a breeze.</li>
 <li>Replacing part fan: Blower style, aka radial style. The fan size is 5015, most of the fans on Amazon is pretty bad and the blower doesn't seem to make a lot of noise so if the machine is still loud after the extruder and electronics fans are replaced then do this.</li>
 </ul>
 <h2><a class="header" href="#calibrations" id="calibrations">Calibrations</a></h2>
