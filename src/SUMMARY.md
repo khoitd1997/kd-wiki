@@ -29,3 +29,4 @@
   - [CMake](common_coding_decisions/cmake.md)
   - [CPP](common_coding_decisions/cpp.md)
   - [Python](common_coding_decisions/python.md)
+- [Miscellaneous](misc.md)
