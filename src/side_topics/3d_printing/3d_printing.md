@@ -24,7 +24,8 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 - [Cable Chain][39]
 - [Filament Holder][40]
 - [HeroMe Fans Enclosure][24] is a good one, although the print takes a lot of post-processing. A lot of the parts can be fragile, USE [this][43] for the duct part instead since Creality changed the fan and the original didn't update.
-- BLTouch: Follow [this link][41], NOTE: THE WIRES CAN BE LOOSE EASILY, MAKE SURE TO PUSH THEM IN HARD WHEN CONNECTING, SHOULD SEE BOTH A SOLID SMALL BLUE LED AND BIG RED LED. [This link][42] has a more complete list of the relevant settings but when there is conflict, follow the previous link.
+- BLTouch: Follow [this link][41], NOTE: THE WIRES CAN BE LOOSE EASILY, MAKE SURE TO PUSH THEM IN HARD WHEN CONNECTING, SHOULD SEE BOTH A SOLID SMALL BLUE LED AND BIG RED LED DURING OPERATION. [This link][42] has a more complete list of the relevant settings but when there is conflict, follow the previous link. [Z-offset Tuning][44]. List of settings that need tuning:
+  - NOZZLE_TO_PROBE_OFFSET: { -45. 75, -9.25, -1.3 }(for HeroMe fanduct).
   - MIN_PROBE_EDGE: Need to be 20 to not hit the clip.
   - MULTIPLE_PROBING: 2, just to be safe.
 - [Hotend chainlinks][34]: Works fine but didn't use the cover.
@@ -93,6 +94,8 @@ The profiles for each material are stored in the same directory as this file. Ho
 - Wall count of 7 for things that need to be strong.
 - Temperature nozzle > 200 and bed = 60 for fast print or strong print.
 
+_Start and End GCODE is in this folder_.
+
 [1]: https://www.youtube.com/watch?v=X3A9Ir2SreI
 [2]: https://hobbyhoarder.net/temperature-tower/
 [3]: https://www.youtube.com/watch?v=qddYsbHawno&feature=youtu.be
@@ -131,3 +134,4 @@ The profiles for each material are stored in the same directory as this file. Ho
 [41]: https://www.youtube.com/watch?v=p504oU-D6iE&feature=youtu.be
 [42]: https://www.reddit.com/r/ender3/comments/e894j7/marlin_20x_guide_for_ender_3_using_skr_mini_e3_v12/
 [43]: https://www.thingiverse.com/thing:3878340
+[44]: https://marlinfw.org/docs/gcode/M851.html
