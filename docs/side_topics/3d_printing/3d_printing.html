@@ -162,25 +162,27 @@
 <li>SKR Mini E3 v1.2</li>
 <li><a href="https://www.thingiverse.com/thing:1874648/files">Raspberry Pi Pin Cover</a></li>
 <li><a href="https://www.thingiverse.com/thing:3004849/files">LCD Cover</a></li>
-<li><a href="https://www.thingiverse.com/thing:3176144/files">Knob</a>: Very convenient for replacing filament.</li>
+<li><a href="https://www.thingiverse.com/thing:3176144/files">Extruder Knob</a>: Very convenient for replacing filament.</li>
 <li><a href="https://www.thingiverse.com/thing:2960375/files">Cable Clips</a>: Nice for organizing cables.</li>
-<li><a href="https://www.thingiverse.com/thing:3052488">Filament Guide</a>: Can be a pain to set up, but DO NOT DO LONG PRINT WITHOUT THIS.</li>
 <li><a href="https://www.thingiverse.com/thing:936611/files">Bowden Tube Tensioner</a>: Not sure if it helps but do it just to be sure.</li>
 <li><a href="https://www.thingiverse.com/thing:3016364">Raspberry Pi 3 Case</a></li>
 <li><a href="https://www.thingiverse.com/thing:2957317/files">Ender 3 Tray</a></li>
 <li><a href="https://www.thingiverse.com/thing:3554420/files">Tool Holder</a></li>
 <li><a href="https://www.thingiverse.com/thing:3322727">Adjustable Feet</a>: WILL NEED RUBBER PAD ON THE BOTTOM.</li>
+<li><a href="https://www.thingiverse.com/thing:2981976">Electronics Fan Shroud for Stock Fan</a>: Less noise than the Sunon Maglev 4020 with custom shroud.</li>
 <li><a href="https://www.thingiverse.com/thing:2920060/files">Cable Chain</a></li>
-<li><a href="https://www.thingiverse.com/thing:3209211/files">Filament Holder</a></li>
 <li><a href="https://www.thingiverse.com/thing:3092044">HeroMe Fans Enclosure</a> is a good one, although the print takes a lot of post-processing. A lot of the parts can be fragile, USE <a href="https://www.thingiverse.com/thing:3878340">this</a> for the duct part instead since Creality changed the fan and the original didn't update.</li>
 <li>BLTouch: Follow <a href="https://www.youtube.com/watch?v=p504oU-D6iE&amp;feature=youtu.be">this link</a>, NOTE: THE WIRES CAN BE LOOSE EASILY, MAKE SURE TO PUSH THEM IN HARD WHEN CONNECTING, SHOULD SEE BOTH A SOLID SMALL BLUE LED AND BIG RED LED DURING OPERATION. <a href="https://www.reddit.com/r/ender3/comments/e894j7/marlin_20x_guide_for_ender_3_using_skr_mini_e3_v12/">This link</a> has a more complete list of the relevant settings but when there is conflict, follow the previous link. <a href="https://marlinfw.org/docs/gcode/M851.html">Z-offset Tuning</a>. List of settings that need tuning:
 <ul>
 <li>NOZZLE_TO_PROBE_OFFSET: { -45. 75, -9.25, -1.3 }(for HeroMe fanduct).</li>
 <li>MIN_PROBE_EDGE: Need to be 20 to not hit the clip.</li>
 <li>MULTIPLE_PROBING: 2, just to be safe.</li>
+<li>BE VERY CAREFUL WITH BLTOUCH SPEED SETTINGS, THEY CAN CAUSE A LOT OF INSTABILITY</li>
 </ul>
 </li>
 <li><a href="https://www.thingiverse.com/thing:3132855">Hotend chainlinks</a>: Works fine but didn't use the cover.</li>
+<li><a href="https://www.thingiverse.com/thing:3357097/files">Filament Guide and Runout Sensor</a>: Will need to use bltouch as z-endstop.</li>
+<li><a href="https://www.thingiverse.com/thing:2949858/files">Wire Guide</a>: Supplement the cable chains.</li>
 </ul>
 <h3><a class="header" href="#planned" id="planned">Planned</a></h3>
 <ul>
@@ -201,15 +203,15 @@
 <p>Calibrations <em>PER MATERIAL</em>:</p>
 <ul>
 <li>Temperature: Do <a href="https://hobbyhoarder.net/temperature-tower/">temperature tower</a> when other issues are already sorted out.</li>
-<li>Flow rate</li>
+<li>Flow rate(commonly called extrusion multiplier)</li>
 </ul>
 <p><a href="https://www.youtube.com/watch?v=Mbn1ckR86Z8">Good video about not calibrating too many things</a></p>
 <p>List of good test prints:</p>
 <ul>
 <li><a href="https://www.thingiverse.com/thing:2219103">Fast Stringing Test</a>: Good for fast test, but <em>some some strings will still remain</em>. The best profile so far still has string on top but they are easy to remove.</li>
 <li><a href="https://www.thingiverse.com/thing:2766430">More Commonly Used Stringing Test</a>: Should use this for ease of comparison with people like youtubers. Proper config should get rid of all string on this one. Can be used for rapid testing if printing partially.</li>
-<li><a href="https://www.thingiverse.com/thing:1545913">Cat Print</a>: A more elaborate test that is shorter to print compared to Benchy.</li>
-<li><a href="https://www.thingiverse.com/thing:2064029">Poly Peal Tower</a>: A tough test that is less time than Benchy but more than Cat, should probably use this instead of Benchy.</li>
+<li><a href="https://www.thingiverse.com/thing:1545913">Cat Print</a>: A more elaborate test.</li>
+<li><a href="https://www.thingiverse.com/thing:2064029">Poly Peal Tower</a>: A tough test that is more thorough than Cat.</li>
 <li><a href="https://www.thingiverse.com/thing:3064242">For Testing Support</a></li>
 <li><a href="https://www.thingiverse.com/thing:2656594/files">All-in-one Test</a>: Take awhile to print so probably do this last.</li>
 </ul>
@@ -231,9 +233,8 @@
 <p>The profiles for each material are stored in the same directory as this file. However, variation of the profile is probably necessary sometimes. General guidelines:</p>
 <ul>
 <li>Infill &gt; 50% for things that will be manhandled. Around 20% is good for things that is usually not touched.</li>
-<li>Print speed 40-60 and layer height &lt; 0.2 for things that need to look pretty.</li>
+<li>Layer height &lt; 0.2 for things that need to look pretty.</li>
 <li>Wall count of 7 for things that need to be strong.</li>
-<li>Temperature nozzle &gt; 200 and bed = 60 for fast print or strong print.</li>
 </ul>
 <p><em>Start and End GCODE is in this folder</em>.</p>
 
