@@ -22,15 +22,19 @@ Got an Ender 3 in May 2020 because it's one of the cheapest while also having on
 - [Adjustable Feet][38]: WILL NEED RUBBER PAD ON THE BOTTOM.
 - [Electronics Fan Shroud for Stock Fan][47]: Less noise than the Sunon Maglev 4020 with custom shroud.
 - [Cable Chain][39]
-- [HeroMe Fans Enclosure][24] is a good one, although the print takes a lot of post-processing. A lot of the parts can be fragile, USE [this][43] for the duct part instead since Creality changed the fan and the original didn't update.
+- [Petsfang Fan Duct][24]: Works fairly well although its bulky size makes it incompatible with most direct drive upgrade.
 - BLTouch: Follow [this link][41], NOTE: THE WIRES CAN BE LOOSE EASILY, MAKE SURE TO PUSH THEM IN HARD WHEN CONNECTING, SHOULD SEE BOTH A SOLID SMALL BLUE LED AND BIG RED LED DURING OPERATION. [This link][42] has a more complete list of the relevant settings but when there is conflict, follow the previous link. [Z-offset Tuning][44]. List of settings that need tuning:
-  - NOZZLE_TO_PROBE_OFFSET: { -45. 75, -9.25, -1.3 }(for HeroMe fanduct).
+  - NOZZLE_TO_PROBE_OFFSET: Get X and Y value from the mount that is being used and used the link above to get the z-offset, then use [this bed leveling][50] to fine tune the final detail.
   - MIN_PROBE_EDGE: Need to be 20 to not hit the clip.
   - MULTIPLE_PROBING: 2, just to be safe.
   - BE VERY CAREFUL WITH BLTOUCH SPEED SETTINGS, THEY CAN CAUSE A LOT OF INSTABILITY
 - [Hotend chainlinks][34]: Works fine but didn't use the cover.
 - [Filament Guide and Runout Sensor][45]: Will need to use bltouch as z-endstop.
+- [V-slot cover][48]: Somehow things keep getting stuck in that slots, this upgrade resolves that.
 - [Wire Guide][46]: Supplement the cable chains.
+- [Bed Handle][49]: PETG makes the bed too hot to touch sometimes so having a handle makes sense, it's pretty flexible and ergonomics.
+- [4020 Fan Cover][51]
+- [5015 Fan Cover][52]
 
 ### Planned
 
@@ -97,6 +101,10 @@ The profiles for each material are stored in the same directory as this file. Ho
 
 _Start and End GCODE is in this folder_.
 
+## Printing Screws
+
+It's totally doable to print screws on the Ender 3(provided that only one screw is being printed at a time to avoid stringing and slow speed and low layer height), however, the screw should only be used to non-important stuffs since they are pretty flimsy(less so if they are like M8), _the scad file for screw is in this folder_.
+
 [1]: https://www.youtube.com/watch?v=X3A9Ir2SreI
 [2]: https://hobbyhoarder.net/temperature-tower/
 [3]: https://www.youtube.com/watch?v=qddYsbHawno&feature=youtu.be
@@ -116,7 +124,7 @@ _Start and End GCODE is in this folder_.
 [21]: https://www.thingiverse.com/thing:2967389
 [22]: https://www.youtube.com/watch?v=l0kCD02BzzY
 [23]: https://www.digikey.com/product-detail/en/sunon-fans/MF40202V2-1000U-A99/259-1801-ND/6198739
-[24]: https://www.thingiverse.com/thing:3092044
+[24]: https://www.thingiverse.com/thing:2759439
 [25]: https://www.reddit.com/r/ender3/comments/b37y32/ender_3_fix_aluminum_extruder_upgrade/
 [27]: https://www.thingiverse.com/thing:3064242
 [28]: https://www.thingiverse.com/thing:1874648/files
@@ -133,7 +141,12 @@ _Start and End GCODE is in this folder_.
 [41]: https://www.youtube.com/watch?v=p504oU-D6iE&feature=youtu.be
 [42]: https://www.reddit.com/r/ender3/comments/e894j7/marlin_20x_guide_for_ender_3_using_skr_mini_e3_v12/
 [43]: https://www.thingiverse.com/thing:3878340
-[44]: https://marlinfw.org/docs/gcode/M851.html
+[44]: https://www.youtube.com/watch?v=y_1Kg45APko
 [45]: https://www.thingiverse.com/thing:3357097/files
 [46]: https://www.thingiverse.com/thing:2949858/files
 [47]: https://www.thingiverse.com/thing:2981976
+[48]: https://www.thingiverse.com/thing:3248551
+[49]: https://www.thingiverse.com/thing:3945923
+[50]: https://www.thingiverse.com/thing:3118088/files
+[51]: https://www.thingiverse.com/thing:2260116
+[52]: https://www.thingiverse.com/thing:2067508/files
