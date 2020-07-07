@@ -7,12 +7,19 @@
         
         <meta name="robots" content="noindex" />
         
+        
+
+
+        <!-- Custom HTML head -->
+        
+
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
+        <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
@@ -21,8 +28,9 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
 
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
@@ -38,7 +46,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -343,6 +351,15 @@
 <li><a href="https://www.youtube.com/watch?v=wkL0WoKleYU">KiCad Push and Shove Router</a></li>
 <li><a href="https://cadlab.io/">CadLab for visual diff on PCB</a></li>
 </ul>
+<h3><a class="header" href="#concepts" id="concepts">Concepts</a></h3>
+<p><a href="https://resources.altium.com/p/what-return-current-path-pcb">Current Return Path</a></p>
+<h3><a class="header" href="#pcb-checklist" id="pcb-checklist">PCB CheckList</a></h3>
+<ul>
+<li><a href="https://hackaday.com/2017/03/09/wtf-are-ground-loops/">No GND Loops</a></li>
+<li>As big as possible GND plane: Help improve signal integrity.</li>
+<li><a href="https://www.autodesk.com/products/eagle/blog/8-pcb-grounding-rules/">This list of GND plane best practices</a></li>
+<li>Make sure board thickness fits the application</li>
+</ul>
 <h3><a class="header" href="#pcb-milling" id="pcb-milling">PCB Milling</a></h3>
 <p>While this is certainly convenient and capable of SMD, milling tends to be a mess and FR4(PCB material) contains fiberclass that while not cancerous is also not good for your lungs so milling PCB requires a fair amount of safety equipment and space. The toolchain flow is also complicated and not very polished, double sided PCB is a pain. <em>Recommend to not do this</em>.</p>
 <h2><a class="header" href="#both" id="both">Both</a></h2>
@@ -454,6 +471,10 @@
 <p><em>Start and End GCODE is in this folder</em>.</p>
 <h2><a class="header" href="#printing-screws" id="printing-screws">Printing Screws</a></h2>
 <p>It's totally doable to print screws on the Ender 3(provided that only one screw is being printed at a time to avoid stringing and slow speed and low layer height), however, the screw should only be used to non-important stuffs since they are pretty flimsy(less so if they are like M8), <em>the scad file for screw is in this folder</em>.</p>
+<h2><a class="header" href="#materials" id="materials">Materials</a></h2>
+<p>Hatchbox PLA is pretty reliable and prints at low temperature.</p>
+<p>ESUN PLA+ require higher temperature to print fast. Texture doesn't seem to be as good as Hatchbox but the temperature resistance might be better.</p>
+<p>Overture PETG is pretty good, however, NEED TO REMOVE PRINT WHEN STILL HOT, otherwise it will take a chunk of the buildplate with it, although the buildplate is still usable even when missing a chunk in the middle. Should only be used when needed though, it prints pretty slow</p>
 <h1><a class="header" href="#server-firmware" id="server-firmware">Server Firmware</a></h1>
 <p>There is a big open source movement going on with players like Google and Facebook pushing for open source BIOS for projects like <a href="https://www.linuxboot.org/">LinuxBoot(uses Linux as later stage bootloader)</a>. The goal of having open source firmware for this is to increase security as well as extensibility.</p>
 <p><a href="https://www.opencompute.org/">Open Computer Project Website</a> has a lot of cool specs that big companies design and manufacturers will follow that specs to make devices. Good for checking out why things the way they were</p>
@@ -675,10 +696,10 @@ MAX_OVERFLOW = 5
         
 
         
-        
+
         
         <script type="text/javascript">
-            window.playpen_copyable = true;
+            window.playground_copyable = true;
         </script>
         
 
