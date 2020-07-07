@@ -171,10 +171,10 @@
 <li><a href="https://www.thingiverse.com/thing:3322727">Adjustable Feet</a>: WILL NEED RUBBER PAD ON THE BOTTOM.</li>
 <li><a href="https://www.thingiverse.com/thing:2981976">Electronics Fan Shroud for Stock Fan</a>: Less noise than the Sunon Maglev 4020 with custom shroud.</li>
 <li><a href="https://www.thingiverse.com/thing:2920060/files">Cable Chain</a></li>
-<li><a href="https://www.thingiverse.com/thing:3092044">HeroMe Fans Enclosure</a> is a good one, although the print takes a lot of post-processing. A lot of the parts can be fragile, USE <a href="https://www.thingiverse.com/thing:3878340">this</a> for the duct part instead since Creality changed the fan and the original didn't update.</li>
-<li>BLTouch: Follow <a href="https://www.youtube.com/watch?v=p504oU-D6iE&amp;feature=youtu.be">this link</a>, NOTE: THE WIRES CAN BE LOOSE EASILY, MAKE SURE TO PUSH THEM IN HARD WHEN CONNECTING, SHOULD SEE BOTH A SOLID SMALL BLUE LED AND BIG RED LED DURING OPERATION. <a href="https://www.reddit.com/r/ender3/comments/e894j7/marlin_20x_guide_for_ender_3_using_skr_mini_e3_v12/">This link</a> has a more complete list of the relevant settings but when there is conflict, follow the previous link. <a href="https://marlinfw.org/docs/gcode/M851.html">Z-offset Tuning</a>. List of settings that need tuning:
+<li><a href="https://www.thingiverse.com/thing:2759439">Petsfang Fan Duct</a>: Works fairly well although its bulky size makes it incompatible with most direct drive upgrade.</li>
+<li>BLTouch: Follow <a href="https://www.youtube.com/watch?v=p504oU-D6iE&amp;feature=youtu.be">this link</a>, NOTE: THE WIRES CAN BE LOOSE EASILY, MAKE SURE TO PUSH THEM IN HARD WHEN CONNECTING, SHOULD SEE BOTH A SOLID SMALL BLUE LED AND BIG RED LED DURING OPERATION. <a href="https://www.reddit.com/r/ender3/comments/e894j7/marlin_20x_guide_for_ender_3_using_skr_mini_e3_v12/">This link</a> has a more complete list of the relevant settings but when there is conflict, follow the previous link. <a href="https://www.youtube.com/watch?v=y_1Kg45APko">Z-offset Tuning</a>. List of settings that need tuning:
 <ul>
-<li>NOZZLE_TO_PROBE_OFFSET: { -45. 75, -9.25, -1.3 }(for HeroMe fanduct).</li>
+<li>NOZZLE_TO_PROBE_OFFSET: Get X and Y value from the mount that is being used and used the link above to get the z-offset, then use <a href="https://www.thingiverse.com/thing:3118088/files">this bed leveling</a> to fine tune the final detail.</li>
 <li>MIN_PROBE_EDGE: Need to be 20 to not hit the clip.</li>
 <li>MULTIPLE_PROBING: 2, just to be safe.</li>
 <li>BE VERY CAREFUL WITH BLTOUCH SPEED SETTINGS, THEY CAN CAUSE A LOT OF INSTABILITY</li>
@@ -182,7 +182,11 @@
 </li>
 <li><a href="https://www.thingiverse.com/thing:3132855">Hotend chainlinks</a>: Works fine but didn't use the cover.</li>
 <li><a href="https://www.thingiverse.com/thing:3357097/files">Filament Guide and Runout Sensor</a>: Will need to use bltouch as z-endstop.</li>
+<li><a href="https://www.thingiverse.com/thing:3248551">V-slot cover</a>: Somehow things keep getting stuck in that slots, this upgrade resolves that.</li>
 <li><a href="https://www.thingiverse.com/thing:2949858/files">Wire Guide</a>: Supplement the cable chains.</li>
+<li><a href="https://www.thingiverse.com/thing:3945923">Bed Handle</a>: PETG makes the bed too hot to touch sometimes so having a handle makes sense, it's pretty flexible and ergonomics.</li>
+<li><a href="https://www.thingiverse.com/thing:2260116">4020 Fan Cover</a></li>
+<li><a href="https://www.thingiverse.com/thing:2067508/files">5015 Fan Cover</a></li>
 </ul>
 <h3><a class="header" href="#planned" id="planned">Planned</a></h3>
 <ul>
@@ -237,6 +241,8 @@
 <li>Wall count of 7 for things that need to be strong.</li>
 </ul>
 <p><em>Start and End GCODE is in this folder</em>.</p>
+<h2><a class="header" href="#printing-screws" id="printing-screws">Printing Screws</a></h2>
+<p>It's totally doable to print screws on the Ender 3(provided that only one screw is being printed at a time to avoid stringing and slow speed and low layer height), however, the screw should only be used to non-important stuffs since they are pretty flimsy(less so if they are like M8), <em>the scad file for screw is in this folder</em>.</p>
 
                     </main>
 
