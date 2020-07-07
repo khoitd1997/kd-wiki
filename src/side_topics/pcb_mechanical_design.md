@@ -16,6 +16,17 @@
 - [KiCad Push and Shove Router][3]
 - [CadLab for visual diff on PCB][4]
 
+### Concepts
+
+[Current Return Path][7]
+
+### PCB CheckList
+
+- [No GND Loops][5]
+- As big as possible GND plane: Help improve signal integrity.
+- [This list of GND plane best practices][6]
+- Make sure board thickness fits the application
+
 ### PCB Milling
 
 While this is certainly convenient and capable of SMD, milling tends to be a mess and FR4(PCB material) contains fiberclass that while not cancerous is also not good for your lungs so milling PCB requires a fair amount of safety equipment and space. The toolchain flow is also complicated and not very polished, double sided PCB is a pain. _Recommend to not do this_.
@@ -28,3 +39,6 @@ While this is certainly convenient and capable of SMD, milling tends to be a mes
 [2]: https://forum.kicad.info/t/kicad-stepup-a-seamless-ecad-mcad-pcb-data-integration/12344
 [3]: https://www.youtube.com/watch?v=wkL0WoKleYU
 [4]: https://cadlab.io/
+[5]: https://hackaday.com/2017/03/09/wtf-are-ground-loops/
+[6]: https://www.autodesk.com/products/eagle/blog/8-pcb-grounding-rules/
+[7]: https://resources.altium.com/p/what-return-current-path-pcb
