@@ -105,6 +105,14 @@ _Start and End GCODE is in this folder_.
 
 It's totally doable to print screws on the Ender 3(provided that only one screw is being printed at a time to avoid stringing and slow speed and low layer height), however, the screw should only be used to non-important stuffs since they are pretty flimsy(less so if they are like M8), _the scad file for screw is in this folder_.
 
+## Materials
+
+Hatchbox PLA is pretty reliable and prints at low temperature.
+
+ESUN PLA+ require higher temperature to print fast. Texture doesn't seem to be as good as Hatchbox but the temperature resistance might be better.
+
+Overture PETG is pretty good, however, NEED TO REMOVE PRINT WHEN STILL HOT, otherwise it will take a chunk of the buildplate with it, although the buildplate is still usable even when missing a chunk in the middle. Should only be used when needed though, it prints pretty slow
+
 [1]: https://www.youtube.com/watch?v=X3A9Ir2SreI
 [2]: https://hobbyhoarder.net/temperature-tower/
 [3]: https://www.youtube.com/watch?v=qddYsbHawno&feature=youtu.be
